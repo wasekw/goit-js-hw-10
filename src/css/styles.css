@@ -19,3 +19,35 @@ body {
   margin-bottom: 16px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.country-list__item {
+  display: flex;
+  justify-content: left;
+  padding: 8px;
+  align-items: center;
+}
+
+.country-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.country-list__name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}

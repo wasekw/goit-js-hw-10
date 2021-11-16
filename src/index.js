@@ -1,13 +1,13 @@
 // import countryMarkup from '../src/templates/countrymain.hbs'
 import './css/styles.css';
-
+import getRefs  from './js/getrefs';
 // console.log(countryMarkup);
 
 import debounce from 'lodash.debounce';
 // // import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const DEBOUNCE_DELAY = 300;
-
+const refs = getRefs();
 // function showError(error) {
 //   console.log(error);
 //   infoBox.innerHTML = 'Упс! Что-то пошло не так! Попробуйте еще раз!';
@@ -20,11 +20,9 @@ const DEBOUNCE_DELAY = 300;
 // languages - массив языков
 // v2/all?fields=name.official,capital,population,flags.svg,languages
 
-const infoBox =document.querySelector('.couny-inftro');
-const searchBox = document.querySelector('#search-box');
-const countryList = document.querySelector('.country-list');
 
-searchBox.addEventListener('input', debounce(inputCountryName, DEBOUNCE_DELAY));
+
+refs.searchBox.addEventListener('input', debounce(inputCountryName, DEBOUNCE_DELAY));
 
 function inputCountryName (event) {
   event.preventDefault();
@@ -57,5 +55,5 @@ function getCountries(countries) {
           `;
       })
       .join('');
-      countryList.innerHTML = countriesFind;
+      refs.countryList.innerHTML = countriesFind;
 };

@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url":  "git+https://github.com/wasekw/goit-js-hw-10"
+    "url": "git+https://github.com/wasekw/goit-js-hw-10"
   },
   "keywords": [],
   "author": "Vasiliy Volobaev <vasiliy.volobaev@gmail.com>",
@@ -20,9 +20,13 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "notiflix": "^3.2.2",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
   }
 }

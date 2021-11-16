@@ -44,33 +44,18 @@ function fetchCountry (name) {
   );
 };
 
-// function renderCountry (country) {
-//   const markup = country.map(() => {
-//     return `<li>
-//             <img class="picture" src="${country.flag[svg]}" alt="flag ${country.name.official}" width="40">
-//             <span class="country-name">${country.name.official}</span>
-//             </li>
-//             <li>Capital: ${country.capital}</li>
-//             <li>Population: ${country.population}</li>
-//             <li>languages: ${country.languages}
-//            </li>`;
-//   }).join("");
-//   console.log(markup);
-//   infoBox.innerHTML = markup;
-// }
+
 
 function getCountries(countries) {
   const countriesFind = countries
       .map(({ name, flags }) => {
           return `
           <li class="country-list__item">
-              <img class="country-list__flag" src="${flags.svg}" alt="Flag of ${name.official}">
+              <img src="${flags.svg}" alt="Flag of ${name.official}" width="40" height="30">
               <p class="country-list__name">${name.official}</p>
           </li>
           `;
       })
       .join('');
-      console.log(countriesFind);
       countryList.innerHTML = countriesFind;
-
 };

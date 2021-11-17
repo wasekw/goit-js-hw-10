@@ -49,5 +49,32 @@ p {
 .country-list__name {
   font-size: 18px;
   font-weight: 500;
-  margin-left: 10px;
+  margin-left: 15px;
+}
+
+.markup-div {
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.markup-name,
+.markup-p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.markup-p {
+  font-size: 18px;
+}
+
+.markup-p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.markup-span {
+  font-weight: 400;
 }

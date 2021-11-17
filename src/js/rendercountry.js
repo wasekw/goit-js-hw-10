@@ -30,7 +30,14 @@ function getCountry(country) {
   refs.infoBox.innerHTML =countryFind;
 };
 
+function clearCountry () {
+  refs.infoBox.innerHTML = "";
+};
 
-export default { getCountries, getCountry };
+function clearCountries () {
+  refs.countryList.innerHTML = "";
+}
+
+export default { getCountries, getCountry, clearCountry, clearCountries };
 
 
